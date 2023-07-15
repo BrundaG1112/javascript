@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirm Example</title>
+    <script>
+        function deleteItem() {
+            alert("Item deleted successfully!");
+        }
+
+        function cancelAction() {
+            alert("Action canceled.");
+        }
+
+        function confirmDelete() {
+            var result = confirm("Are you sure you want to delete this item?");
+            if (result) {
+                deleteItem();
+            } else {
+                cancelAction();
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Confirm Example</h1>
+    <button onclick="confirmDelete()">Delete Item</button>
+</body>
+</html>

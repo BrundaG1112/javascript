@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Application</title>
+    <script>
+        function welcomeMessage() {
+            alert("Welcome to our survey page!");
+        }
+
+        function submitFeedback() {
+            var confirmation = confirm("Are you sure you want to submit your feedback?");
+            if (confirmation) {
+                var name = prompt("Enter your name:");
+                if (name) {
+                    alert("Thank you, " + name + ", for your feedback!");
+                } else {
+                    alert("Thank you for your feedback!");
+                }
+            }
+        }
+    </script>
+</head>
+<body onload="welcomeMessage()">
+    <h1>Survey Application</h1>
+    <button onclick="submitFeedback()">Submit Feedback</button>
+</body>
+</html>

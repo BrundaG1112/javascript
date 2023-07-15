@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prompt Example</title>
+    <style>
+        #welcomeMessage {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prompt Example</h1>
+    <button onclick="getName()">Get Name</button>
+    <div id="welcomeMessage"></div>
+    <script>
+        function getName() {
+            var name = prompt("Please enter your name:");
+            var welcomeMessageElement = document.getElementById("welcomeMessage");
+            
+            if (name) {
+                welcomeMessageElement.textContent = "Hello, " + name + "! Welcome to our website.";
+            } else {
+                welcomeMessageElement.textContent = "You did not provide a name. Welcome anyway!";
+            }
+        }
+    </script>
+</body>
+</html>
